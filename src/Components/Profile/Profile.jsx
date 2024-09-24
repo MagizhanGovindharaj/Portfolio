@@ -9,6 +9,7 @@ import { FaMoon } from "react-icons/fa";
 import Button from "../Button/Button";
 import myresume from "../../../public/CV.pdf";
 import Typewriter from "typewriter-effect";
+import profilepic from "../../../public/Profile/profile3.webp"
 
 function Profile({ setday, day_night }) {
   const { name, profession, description, resume } = PROFILE_DATA;
@@ -69,7 +70,7 @@ function Profile({ setday, day_night }) {
           <IoSunny color="#222" onClick={dayornight} className="icon"/>
         )}
         <img
-          src="public\Profile\profile3.webp"
+          src={profilepic}
           alt=""
         />
       </section>
