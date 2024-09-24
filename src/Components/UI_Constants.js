@@ -2,7 +2,7 @@ export const PROFILE_DATA = {
   name: "MAGIZHAN GOVINDHARAJI",
   profession: "FRONTEND DEVELOPER",
   description:
-    "With a passion for developing modern React web apps for commercial businesses",
+    "As a skilled React Frontend Developer with a strong foundation in modern web technologies and a focus on delivering seamless user experiences",
 };
 
 export const PROJECT_DATA = {
