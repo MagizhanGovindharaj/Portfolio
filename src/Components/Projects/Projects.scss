@@ -1,0 +1,85 @@
+.projmain {
+  min-height: 49.5em;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  .heading {
+    color: white;
+    font-family: Rubik, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .projectsdiv {
+    min-width: 70vw;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 30px;
+    .project {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-family: Roboto Mono, monospace;
+      color: white;
+      transition: transform 0.2s ease-in-out;
+    }
+    .project img {
+      position: relative;
+      border-radius: 20px;
+      max-width: 250px;
+      height: 230px;
+      margin-bottom: 10px;
+    }
+    .project:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .projmain {
+    margin-bottom: 60px;
+  .heading {
+      font-family: Rubik, sans-serif;
+      font-size: 40px;
+      font-weight: 900;
+    }
+    .projectsdiv {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 30px;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projmain {
+    margin-bottom: 60px;
+    gap: 25px;
+    .heading {
+      font-family: Rubik, sans-serif;
+      font-size: 32px;
+    }
+    .projectsdiv {
+      width: 250px;
+    }
+    .project h2{
+      font-size: 20px;
+    }
+    .project.p{
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}
