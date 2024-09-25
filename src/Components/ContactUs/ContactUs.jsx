@@ -31,6 +31,7 @@ function ContactUs({ day_night }) {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(formdata.name && formdata.email && formdata.message){
     emailjs
       .send("service_dlf2gnj", "template_vkf7c4a", formdata)
       .then((response) => {
@@ -56,6 +57,19 @@ function ContactUs({ day_night }) {
       .catch((error) => {
         console.error("Error sending email: ", error);
       });
+    }else{
+      toast.warn("All Fields are Mandatory!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: `${day_night?"light":"dark"}`,
+        transition: Zoom,
+      });
+    }
   };
   return (
     <div className="contactmain">
@@ -83,7 +97,6 @@ function ContactUs({ day_night }) {
           onChange={handleChange}
           name="email"
           value={formdata.email}
-          required
         />
         <textarea
           type="address"
