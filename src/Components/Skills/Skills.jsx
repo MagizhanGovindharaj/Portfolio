@@ -5,7 +5,7 @@ import "../Skills/Skills.scss";
 
 function Skills({day_night}) {
   const { Header, Skills } = SKILLS_DATA;
-  const { technicalSkills1, technicalSkills2, Tools } = Skills;
+  const { technicalSkills1, technicalSkills2, technicalSkills3, Tools } = Skills;
   return (
     <div className="skillscontainer" style={{ color: `${day_night ? "white" : "#222"}` }}>
       <div className="skillsheader">{Header}</div>
@@ -25,6 +25,17 @@ function Skills({day_night}) {
         {technicalSkills2.map((skill, index) => {
           return (
             <div className="techSkillsTwo techSkills" key={index}>
+              <GiCheckMark className="tickicon" />
+              <p>{skill}</p>
+            </div>
+          );
+        })}
+        </section>
+        <hr />
+        <section>
+        {technicalSkills3.map((skill, index) => {
+          return (
+            <div className="tools techSkills" key={index}>
               <GiCheckMark className="tickicon" />
               <p>{skill}</p>
             </div>

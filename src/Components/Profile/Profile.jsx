@@ -7,7 +7,7 @@ import "../Profile/Profile.scss";
 import { IoSunny } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa";
 import Button from "../Button/Button";
-import myresume from "../../../public/Magizhan.pdf"
+import myresume from "../../../public/My Resume.pdf"
 import Typewriter from "typewriter-effect";
 import profilepic from "../../../public/Profile/profile3.webp"
 

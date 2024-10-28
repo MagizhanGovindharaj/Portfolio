@@ -42,6 +42,12 @@ export const SKILLS_DATA = {
       "MUI",
       "Redux-Toolkit"
     ],
+    technicalSkills3: [
+      "ExpressJS",
+      "Mongodb",
+      "Mongodb Compass",
+      "Postman"
+    ],
       Tools: ["Github", "Vercel","SASS", "GitLab", "Netlify"],
   },
 };
