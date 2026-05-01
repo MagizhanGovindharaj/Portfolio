@@ -49,11 +49,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-theme="dark" // ← forces dark token
+      style={{ colorScheme: "dark" }} // ← forces browser chrome dark (scrollbars, inputs)
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-      data-theme="dark"
-      style={{ colorScheme: "dark" }}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#08091a]">
+        {" "}
+        {/* ← hard fallback */}
+        {children}
+      </body>
     </html>
   );
 }
