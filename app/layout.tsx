@@ -29,6 +29,14 @@ export const metadata: Metadata = {
     url: "https://magizhan.digital",
     siteName: "Magizhan Portfolio",
     type: "website",
+    images: [
+      {
+        url: "/magi.png",
+        width: 1200,
+        height: 630,
+        alt: "Magizhan Govindharaji",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
